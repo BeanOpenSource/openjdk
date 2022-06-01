@@ -51,6 +51,9 @@ public class CRC32 implements Checksum {
     public CRC32() {
     }
 
+    private static int doUpdateBytes(int crc, byte[] b, int off, int len) {
+        return updateBytes(crc, b, off, len);
+    }
 
     /**
      * Updates the CRC-32 checksum with the specified byte (the low

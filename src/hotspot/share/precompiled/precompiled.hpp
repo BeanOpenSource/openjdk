@@ -31,6 +31,8 @@
 // measurements made in November 2018. This list excludes files named
 // *.include.hpp, since including them decreased build performance.
 
+#include "smmintrin.h" // contains GCC intrinsics, which are going to be used by our implementation of the CRC32 func
+
 #include "classfile/classLoaderData.hpp"
 #include "classfile/javaClasses.hpp"
 #include "classfile/systemDictionary.hpp"
